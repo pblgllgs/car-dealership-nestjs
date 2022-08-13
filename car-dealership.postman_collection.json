@@ -1,0 +1,272 @@
+{
+	"info": {
+		"_postman_id": "272068db-9d0f-4abe-b689-e0bc860a577c",
+		"name": "car-dealership",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17450698"
+	},
+	"item": [
+		{
+			"name": "cars",
+			"item": [
+				{
+					"name": "getCars",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/cars",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"cars"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getCarById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/cars/5f5bbf2b-8b74-40a5-99c2-d2692a10529f",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"cars",
+								"5f5bbf2b-8b74-40a5-99c2-d2692a10529f"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"brand\": \"tesla\",\r\n    \"model\": \"X\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/cars/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"cars",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"brand\":\"BMW\",\r\n    \"model\":\"M4\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/cars/63d83c67-ee3c-4a9d-ad17-2c368cac6935",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"cars",
+								"63d83c67-ee3c-4a9d-ad17-2c368cac6935"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/cars/85b9c914-e5da-44d7-92b9-5ef12801356f",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"cars",
+								"85b9c914-e5da-44d7-92b9-5ef12801356f"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "brands",
+			"item": [
+				{
+					"name": "getBrands",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/brands",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"brands"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getBrandById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/brands/60762641-0a43-4b2b-8773-3fe824e0ce2d",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"brands",
+								"60762641-0a43-4b2b-8773-3fe824e0ce2d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"tesla\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/brands",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"brands"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"BMW\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/brands/cb7324c0-e093-482b-9fdf-b8d3f8fc75d4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"brands",
+								"cb7324c0-e093-482b-9fdf-b8d3f8fc75d4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/brands/cb7324c0-e093-482b-9fdf-b8d3f8fc75d4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"brands",
+								"cb7324c0-e093-482b-9fdf-b8d3f8fc75d4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "seed",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/seed",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"seed"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

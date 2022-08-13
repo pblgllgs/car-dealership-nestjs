@@ -9,22 +9,12 @@ import { Car } from './interfaces/car.interface';
 
 @Injectable()
 export class CarsService {
-  private cars = [
-    {
-      id: uuid(),
-      brand: 'BMW',
-      model: 'M3',
-    },
-    {
-      id: uuid(),
-      brand: 'Audi',
-      model: 'Q3',
-    },
-    {
-      id: uuid(),
-      brand: 'Mercedes',
-      model: 'C class',
-    },
+  private cars: Car[] = [
+    // {
+    //   id: uuid(),
+    //   brand: 'BMW',
+    //   model: 'M3',
+    // },
   ];
 
   finAll() {
@@ -70,5 +60,9 @@ export class CarsService {
     const carToDelete = this.finOneById(id);
     this.cars = this.cars.filter((car) => car.id !== id);
     return carToDelete;
+  }
+
+  fillCarsWithSeedData(cars: Car[]) {
+    this.cars = cars;
   }
 }
